@@ -1,0 +1,24 @@
+﻿@model IQueryable<Product>
+
+@{
+
+    var name = "<b>Jeremy</b>";
+}
+
+
+        <p>Hello,@Html.Raw(@name)</p>
+     @Html.Partial("~/Views/Shared/_LoginPartial.cshtml")
+        <ul>
+            @foreach (var character in "hello razor")
+            {
+                <li>@character</li>
+            }
+
+        </ul>
+
+@section scripts{
+    <p>This is the scripts.</p>
+    }
+
+
+
